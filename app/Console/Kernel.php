@@ -8,13 +8,12 @@ use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 class Kernel extends ConsoleKernel
 {
     /**
-     * The Artisan commands provided by your application.
-     * Use this to import third-party commands.
+     * Use this to import third-party Artisan commands.
      *
      * @var array
      */
     protected $commands = [
-        // \Aic\Hub\Foundation\Commands\Foobar::class
+        \Aic\Hub\Foundation\Commands\DatabaseReset::class
     ];
 
     /**
