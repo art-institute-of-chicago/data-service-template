@@ -33,6 +33,13 @@ ds() {
 
             git remote set-url origin "https://github.com/$ORG/data-service-$NAME.git"
 
+            git fetch
+
+            composer install
+
+            # Uncomment this command if you'd like to open the repo in Sublime Text
+            # subl .
+
             curl -s "https://api.github.com/repos/$ORG/data-service-$NAME" 2>&1 | grep -q 'Not Found'
 
             if [ $? -eq 0 ]; then
@@ -56,8 +63,24 @@ ds() {
 
         ;;
 
+        "clean")
+
+            rm 'app/Bar.php'
+            rm 'app/Foo.php'
+            rm 'app/Http/Controllers/BarController.php'
+            rm 'app/Http/Controllers/FooController.php'
+            rm 'app/Http/Transformers/BarTransformer.php'
+            rm 'app/Http/Transformers/FooTransformer.php'
+            rm 'database/factories/BarFactory.php'
+            rm 'database/factories/FooFactory.php'
+            rm 'database/migrations/2018_02_26_130000_foo_bar.php'
+
+            # TODO: Remove `foos` and `bars` lines from routes/api.php
+
+        ;;
+
         *)
-            echo "You must specify an action: create <name>, squash"
+            echo "You must specify an action: create <name>, squash, clean"
         ;;
 
     esac
