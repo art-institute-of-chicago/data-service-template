@@ -9,9 +9,7 @@ class Foo extends BaseModel
 
     public function bars()
     {
-
         return $this->hasMany('App\Bar');
-
     }
 
 }

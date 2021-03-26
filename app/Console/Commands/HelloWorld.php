@@ -7,11 +7,11 @@ class HelloWorld extends AbstractCommand
 
     protected $signature = 'hello:world';
 
-    protected $description = "Say hi";
+    protected $description = 'Say hi';
 
     public function handle()
     {
-        $this->info("Hello world");
+        $this->info('Hello world');
     }
 
 }
