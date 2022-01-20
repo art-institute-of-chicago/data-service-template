@@ -11,7 +11,6 @@ use Aic\Hub\Foundation\AbstractController as BaseController;
 
 class BarController extends BaseController
 {
-
     protected $model = \App\Bar::class;
 
     protected $transformer = \App\Http\Transformers\BarTransformer::class;
@@ -31,5 +30,4 @@ class BarController extends BaseController
             return Bar::find($id)->where('foo_id', $foo_id)->firstOrFail();
         });
     }
-
 }

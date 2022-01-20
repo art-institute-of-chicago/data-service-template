@@ -6,10 +6,8 @@ use Aic\Hub\Foundation\AbstractTransformer;
 
 class BarTransformer extends AbstractTransformer
 {
-
     public function transform($bar)
     {
-
         $data = [
             'id' => $bar->id,
             'title' => $bar->title,
@@ -18,7 +16,5 @@ class BarTransformer extends AbstractTransformer
 
         // Enables ?fields= functionality
         return parent::transform($data);
-
     }
-
 }
