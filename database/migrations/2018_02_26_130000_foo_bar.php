@@ -6,10 +6,8 @@ use Illuminate\Database\Migrations\Migration;
 
 class FooBar extends Migration
 {
-
     public function up()
     {
-
         Schema::create('foos', function (Blueprint $table) {
             $table->integer('id')->unsigned()->primary();
             $table->text('title')->nullable();
@@ -22,7 +20,6 @@ class FooBar extends Migration
             $table->integer('foo_id')->unsigned()->index();
             $table->timestamps();
         });
-
     }
 
     public function down()
@@ -30,5 +27,4 @@ class FooBar extends Migration
         Schema::dropIfExists('foos');
         Schema::dropIfExists('bars');
     }
-
 }

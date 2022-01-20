@@ -4,7 +4,6 @@ namespace App\Console\Commands;
 
 class HelloWorld extends AbstractCommand
 {
-
     protected $signature = 'hello:world';
 
     protected $description = 'Say hi';
@@ -13,5 +12,4 @@ class HelloWorld extends AbstractCommand
     {
         $this->info('Hello world');
     }
-
 }
