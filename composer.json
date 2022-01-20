@@ -58,7 +58,7 @@
             "php-cs-fixer fix --diff --config vendor/aic/data-hub-foundation/.php-cs-fixer.dist.php"
         ],
         "foundation": [
-            "php composer-dev.php",
+            "php vendor/aic/data-hub-foundation/composer-dev.php",
             "COMPOSER=composer-dev.json composer update aic/data-hub-foundation"
         ]
     },
