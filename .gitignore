@@ -18,3 +18,7 @@ yarn-error.log
 # Foundation workflow [API-118]
 composer-dev.json
 composer-dev.lock
+
+# PHP-CS-Fixer [API-45]
+.php_cs.cache
+.php-cs-fixer.cache
