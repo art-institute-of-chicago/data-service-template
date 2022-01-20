@@ -1,7 +1,10 @@
 {
     "name": "aic/data-service-template",
     "description": "A data service for the AIC data hub.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "type": "project",
     "repositories": [
@@ -54,6 +57,10 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover"
+        ],
+        "foundation": [
+            "php composer-dev.php",
+            "COMPOSER=composer-dev.json composer update aic/data-hub-foundation"
         ]
     },
     "config": {

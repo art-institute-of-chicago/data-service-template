@@ -3,3 +3,7 @@
 Homestead.json
 Homestead.yaml
 .env
+
+# Foundation workflow [API-118]
+composer-dev.json
+composer-dev.lock
