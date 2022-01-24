@@ -12,7 +12,4 @@ Route::group(['prefix' => 'v1'], function () {
 
     Route::get('bars', 'BarController@index');
     Route::get('bars/{id}', 'BarController@show');
-
-    Route::get('foos/{id}/bar', 'BarController@indexForFoo');
-    Route::get('foos/{foo_id}/bar/{id}', 'BarController@showForFoo');
 });
