@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Aic\Hub\Foundation\AbstractModel as BaseModel;
 
@@ -8,6 +8,6 @@ class Bar extends BaseModel
 {
     public function foo()
     {
-        return $this->belongsTo('App\Foo');
+        return $this->belongsTo(Foo::class);
     }
 }

@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Foo;
+use App\Models\Foo;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class BarFactory extends Factory
