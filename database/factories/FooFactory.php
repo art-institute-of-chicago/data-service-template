@@ -2,14 +2,14 @@
 
 namespace Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
+use Aic\Hub\Foundation\AbstractFactory as BaseFactory;
 
-class FooFactory extends Factory
+class FooFactory extends BaseFactory
 {
     public function definition()
     {
         return [
-            'id' => $this->faker->unique()->randomNumber(6),
+            'id' => $this->getValidId(),
             'title' => ucfirst($this->faker->words(3, true)),
         ];
     }
