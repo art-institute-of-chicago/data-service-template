@@ -2,7 +2,6 @@
 
 namespace Database\Factories;
 
-use App\Models\Foo;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class BarFactory extends Factory
@@ -12,7 +11,6 @@ class BarFactory extends Factory
         return [
             'id' => $this->faker->unique()->randomNumber(6),
             'title' => ucfirst($this->faker->words(3, true)),
-            'foo_id' => Foo::all()->get()->random(),
         ];
     }
 }
