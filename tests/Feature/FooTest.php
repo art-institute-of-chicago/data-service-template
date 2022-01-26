@@ -2,26 +2,11 @@
 
 namespace Tests\Feature;
 
-use App\Models\Foo;
-use Tests\TestCase;
+use Tests\AbstractTestCase as BaseTestCase;
 
-class FooTest extends TestCase
+class FooTest extends BaseTestCase
 {
-    public function test_example()
-    {
-        $foo = Foo::factory()->create([
-            'id' => 42,
-            'title' => 'Example Title',
-        ]);
+    protected $endpoint = 'api/v1/foos';
 
-        $response = $this->getJson('api/v1/foos/' . $foo->id);
-
-        $response->assertStatus(200);
-        $response->assertJson([
-            'data' => [
-                'id' => 42,
-                'title' => 'Example Title',
-            ],
-        ]);
-    }
+    protected $model = \App\Models\Foo::class;
 }
