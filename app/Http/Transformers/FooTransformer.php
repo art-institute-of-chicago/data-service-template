@@ -6,15 +6,14 @@ use Aic\Hub\Foundation\AbstractTransformer;
 
 class FooTransformer extends AbstractTransformer
 {
-    public function transform($foo)
+    public function transform($item)
     {
         $data = [
-            'id' => $foo->id,
-            'title' => $foo->title,
-            'bar_ids' => $foo->bars->pluck('id'),
+            'id' => $item->id,
+            'title' => $item->title,
+            'bar_ids' => $item->bars->pluck('id'),
         ];
 
-        // Enables ?fields= functionality
         return parent::transform($data);
     }
 }
