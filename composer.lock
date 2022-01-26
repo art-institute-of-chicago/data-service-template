@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/art-institute-of-chicago/data-hub-foundation.git",
-                "reference": "bac6ced0d9dd07e9f6019b67ce8071c2c8c42f55"
+                "reference": "e6e1ed7659db98326504cb9ab3d949091da62146"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/art-institute-of-chicago/data-hub-foundation/zipball/bac6ced0d9dd07e9f6019b67ce8071c2c8c42f55",
-                "reference": "bac6ced0d9dd07e9f6019b67ce8071c2c8c42f55",
+                "url": "https://api.github.com/repos/art-institute-of-chicago/data-hub-foundation/zipball/e6e1ed7659db98326504cb9ab3d949091da62146",
+                "reference": "e6e1ed7659db98326504cb9ab3d949091da62146",
                 "shasum": ""
             },
             "require": {
@@ -75,7 +75,7 @@
                 "source": "https://github.com/art-institute-of-chicago/data-hub-foundation/tree/laravel-8-support",
                 "issues": "https://github.com/art-institute-of-chicago/data-hub-foundation/issues"
             },
-            "time": "2022-01-25T04:41:24+00:00"
+            "time": "2022-01-26T03:49:50+00:00"
         },
         {
             "name": "asm89/stack-cors",

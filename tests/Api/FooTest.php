@@ -2,7 +2,7 @@
 
 namespace Tests\Api;
 
-use Tests\ApiTestCase as BaseTestCase;
+use Aic\Hub\Foundation\Testing\ApiTestCase as BaseTestCase;
 
 class FooTest extends BaseTestCase
 {
