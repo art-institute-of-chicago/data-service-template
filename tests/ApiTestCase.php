@@ -6,7 +6,7 @@ use LogicException;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 
-abstract class AbstractTestCase extends BaseTestCase
+abstract class ApiTestCase extends BaseTestCase
 {
     use CreatesApplication;
     use RefreshDatabase;
@@ -15,6 +15,9 @@ abstract class AbstractTestCase extends BaseTestCase
 
     protected $model;
 
+    /**
+     * Work-around for "Properties cannot be declared abstract" error.
+     */
     protected function setUp(): void
     {
         foreach (['endpoint', 'model'] as $property) {

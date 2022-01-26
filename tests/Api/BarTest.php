@@ -1,8 +1,8 @@
 <?php
 
-namespace Tests\Feature;
+namespace Tests\Api;
 
-use Tests\AbstractTestCase as BaseTestCase;
+use Tests\ApiTestCase as BaseTestCase;
 
 class BarTest extends BaseTestCase
 {
