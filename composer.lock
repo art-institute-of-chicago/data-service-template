@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/art-institute-of-chicago/data-hub-foundation.git",
-                "reference": "8f14a44d382b6c93341b223b9b1ca929bc9b8a69"
+                "reference": "695fdccd2752421dd0b108d8f35a9a981425c9e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/art-institute-of-chicago/data-hub-foundation/zipball/8f14a44d382b6c93341b223b9b1ca929bc9b8a69",
-                "reference": "8f14a44d382b6c93341b223b9b1ca929bc9b8a69",
+                "url": "https://api.github.com/repos/art-institute-of-chicago/data-hub-foundation/zipball/695fdccd2752421dd0b108d8f35a9a981425c9e7",
+                "reference": "695fdccd2752421dd0b108d8f35a9a981425c9e7",
                 "shasum": ""
             },
             "require": {
@@ -29,7 +29,8 @@
                 "php": "^7.3|^8.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.5"
+                "friendsofphp/php-cs-fixer": "^3.5",
+                "vendor/package-patches-dev": "~1.0"
             },
             "type": "library",
             "extra": {
@@ -43,6 +44,12 @@
                         {
                             "title": "API-227: Remove comments from migration stubs",
                             "url": "vendor/aic/data-hub-foundation/patches/API-227---remove-comments-from-migration-stubs.diff"
+                        }
+                    ],
+                    "friendsofphp/php-cs-fixer": [
+                        {
+                            "title": "API-45: Fix arrow functions in method_chaining_indentation",
+                            "url": "vendor/aic/data-hub-foundation/patches/API-45---fix-arrow-functions-in-method-chaining-indentation.diff"
                         }
                     ]
                 }
@@ -75,7 +82,7 @@
                 "source": "https://github.com/art-institute-of-chicago/data-hub-foundation/tree/laravel-8-support",
                 "issues": "https://github.com/art-institute-of-chicago/data-hub-foundation/issues"
             },
-            "time": "2022-01-26T05:06:17+00:00"
+            "time": "2022-01-28T01:15:27+00:00"
         },
         {
             "name": "asm89/stack-cors",
