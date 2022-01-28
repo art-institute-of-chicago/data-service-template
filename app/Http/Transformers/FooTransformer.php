@@ -12,6 +12,7 @@ class FooTransformer extends AbstractTransformer
             'id' => $item->id,
             'title' => $item->title,
             'bar_ids' => $item->bars->pluck('id'),
+            'bar_titles' => $item->bars->pluck('title'),
         ];
 
         return parent::transform($data);

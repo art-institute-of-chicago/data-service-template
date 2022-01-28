@@ -12,6 +12,13 @@ class BarTransformer extends AbstractTransformer
             'id' => $item->id,
             'title' => $item->title,
             'foo_id' => $item->foo->id ?? null,
+            'foo_title' => $item->foo->id ?? null,
+            'baz' => [
+                'a' => 'z',
+                'b' => 42,
+                'c' => true,
+                'd' => null,
+            ],
         ];
 
         return parent::transform($data);
