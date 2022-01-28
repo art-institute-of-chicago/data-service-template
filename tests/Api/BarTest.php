@@ -2,7 +2,7 @@
 
 namespace Tests\Api;
 
-use Aic\Hub\Foundation\Testing\ApiTestCase as BaseTestCase;
+use Aic\Hub\Foundation\Testing\EndpointTestCase as BaseTestCase;
 
 class BarTest extends BaseTestCase
 {
