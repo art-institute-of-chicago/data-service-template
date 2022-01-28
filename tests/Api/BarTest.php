@@ -22,6 +22,7 @@ class BarTest extends BaseTestCase
                 'b' => 'integer',
                 'c' => 'boolean',
                 'd' => 'null',
+                'e' => null,
             ],
         ];
     }

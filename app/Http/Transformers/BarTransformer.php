@@ -18,6 +18,7 @@ class BarTransformer extends AbstractTransformer
                 'b' => 42,
                 'c' => true,
                 'd' => null,
+                'e' => null,
             ],
         ];
 
