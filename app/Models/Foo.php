@@ -1,13 +1,17 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Aic\Hub\Foundation\AbstractModel as BaseModel;
 
 class Foo extends BaseModel
 {
+    protected $casts = [
+        'id' => 'integer',
+    ];
+
     public function bars()
     {
-        return $this->hasMany('App\Bar');
+        return $this->hasMany(Bar::class);
     }
 }

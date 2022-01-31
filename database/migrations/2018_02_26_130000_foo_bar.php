@@ -17,7 +17,7 @@ class FooBar extends Migration
         Schema::create('bars', function (Blueprint $table) {
             $table->integer('id')->unsigned()->primary();
             $table->text('title')->nullable();
-            $table->integer('foo_id')->unsigned()->index();
+            $table->integer('foo_id')->unsigned()->nullable()->index();
             $table->timestamps();
         });
     }

@@ -2,18 +2,15 @@
 
 namespace Database\Factories;
 
-use App\Foo;
-use Illuminate\Database\Eloquent\Factories\Factory;
+use Aic\Hub\Foundation\AbstractFactory as BaseFactory;
 
-class FooFactory extends Factory
+class FooFactory extends BaseFactory
 {
-    protected $model = Foo::class;
-
     public function definition()
     {
         return [
-            'id' => $faker->unique()->randomNumber(6),
-            'title' => ucfirst($faker->words(3, true)),
+            'id' => $this->getValidId(),
+            'title' => ucfirst($this->faker->words(3, true)),
         ];
     }
 }
