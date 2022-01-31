@@ -10,7 +10,7 @@ class FooFactory extends BaseFactory
     {
         return [
             'id' => $this->getValidId(),
-            'title' => ucfirst($this->faker->words(3, true)),
+            'title' => $this->getTitle(),
         ];
     }
 }
