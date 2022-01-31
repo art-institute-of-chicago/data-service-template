@@ -23,6 +23,9 @@ class BarTest extends BaseTestCase
                 'c' => 'boolean',
                 'd' => 'null',
                 'e' => null,
+                'f' => function ($value) {
+                    return 23 < $value && $value < 25;
+                },
             ],
         ];
     }
